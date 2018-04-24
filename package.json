@@ -1,0 +1,20 @@
+{
+  "name": "now-cleaner",
+  "version": "1.0.0",
+  "description": "Utility to remove deployments without alias",
+  "main": "index.js",
+  "bin": {
+    "now-cleaner": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jarrku/now-cleaner"
+  },
+  "keywords": ["Now"],
+  "author": "Simon VDB",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.1.2",
+    "yargs": "^11.0.0"
+  }
+}
