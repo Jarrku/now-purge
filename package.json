@@ -1,5 +1,5 @@
 {
-  "name": "now-cleaner",
+  "name": "@jarrku/now-purge",
   "version": "1.0.0",
   "description": "Utility to remove deployments without alias",
   "main": "index.js",
