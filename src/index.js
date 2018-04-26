@@ -30,7 +30,7 @@ const removeDeployments = deployments => {
     return;
   }
 
-  deployments.forEach(nowClient.removeDeploy);
+  return Promise.all(deployments.map(deploy => nowClient.removeDeploy(deploy)));
 };
 
 // you can pass your `package.json` or `now.json` `name` to filter your deployments
