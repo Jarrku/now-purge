@@ -9,7 +9,7 @@ const URLS = {
   TEAMS: "/teams"
 };
 
-const logError = error => {
+const logError = err => {
   console.log(`${err} ❌`);
 };
 
@@ -17,7 +17,7 @@ class Now {
   constructor({ token, team }) {
     this._teamSlug = team;
     this._headers = {
-      Authorization: `Bearer ${this._token}`,
+      Authorization: `Bearer ${token}`,
       "Content-Type": "application/json"
     };
   }
@@ -83,10 +83,11 @@ class Now {
     };
 
     try {
-      await this.fetch(url, opts);
+      await this._fetch(url, opts);
       console.log(`${uid} removed ✅`);
     } catch (err) {
       logError(`${uid} error`);
+      console.log(err);
     }
   }
 }
