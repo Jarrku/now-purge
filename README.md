@@ -11,19 +11,19 @@ This repo is updated to use the API endpoints in favour of the deprecated `now-c
 ### One time run (using NPM 5 / npx)
 
 ```bash
-npx now-purge --token YOUR_NOW_TOKEN --team OPTION_TEAM_ID
+npx @jarrku/now-purge --token YOUR_NOW_TOKEN --team OPTION_TEAM_ID
 ```
 
 ### Installation
 
 ```bash
-npm install -g now-purge
+npm install -g @jarrku/now-purge
 ```
 
 ### Usage
 
 ```bash
-now-purge [options]
+@jarrku/now-purge [options]
 
 Options:
   --token        now auth token [Required]
@@ -35,5 +35,5 @@ Options:
 You can remove your oldest deployments without an alias
 
 ```bash
-npx now-purge --token YOUR_NOW_TOKEN --team OPTION_TEAM_ID
+npx @jarrku/now-purge --token YOUR_NOW_TOKEN --team OPTION_TEAM_ID
 ```
