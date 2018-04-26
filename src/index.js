@@ -13,7 +13,7 @@ const Now = require("./now");
 let nowClient;
 
 const getDeploymentsWithoutAlias = async () => {
-  const [deployments, aliases] = await Promise.all([
+  const [{ deployments }, { aliases }] = await Promise.all([
     nowClient.getDeploys(),
     nowClient.getAliases()
   ]);
